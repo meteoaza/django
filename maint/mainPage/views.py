@@ -13,3 +13,10 @@ def log(request):
     l = [line.strip('\n') for line in open(r'd:\IRAM\MAINT\LOGs\maintLog.txt', 'r', encoding='utf-8')]
     context = {'log': l}
     return render(request, 'report/log.html', context)
+def clear(request):
+    c = ''
+    with open(r'd:\IRAM\MAINT\LOGs\maintLog.txt', 'w')as f:
+        f.write(c)
+    # l = [line.strip('\n') for line in open(r'd:\IRAM\MAINT\LOGs\maintLog.txt', 'r', encoding='utf-8')]
+    # context = {'log': l}
+    return render(request, 'mainPage/homePage.html')
