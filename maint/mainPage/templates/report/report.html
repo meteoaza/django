@@ -1,7 +1,8 @@
 {%extends "report/wrapper.html"%}
 
 {% block content %}
-<a href="/" class="btn btn-info btn-lg">Главная страница</a>
+<a href="/clear_rep" class="btn btn-dark">Clear</a>
+<a href="/" class="btn btn-link">Главная страница</a>
 {% for rep in report %}
   <p>{{rep}}</p>
 {% endfor %}

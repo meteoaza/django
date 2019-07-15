@@ -1,0 +1,39 @@
+{%extends "report/wrapper.html"%}
+
+{% block content %}
+<a href="/sens" class="btn btn-dark">Refresh</a>
+<a href="/" class="btn btn-link">Главная страница</a>
+<h4>{{time}}</h4>
+<table class="table table-dark " >
+  <tr>
+    <th style="text-align: center">{{lt1}}</th>
+    <th style="text-align: center">{{lt2}}</th>
+    <th style="text-align: center">{{lt3}}</th>
+  </tr>
+  <tr>
+    <th style="text-align: center">{{lt4}}</th>
+    <th style="text-align: center">{{lt5}}</th>
+    <th style="text-align: center">{{lt6}}</th>
+  </tr>
+  <tr>
+    <th style="text-align: center">{{cl1}}</th>
+    <th style="text-align: center"></th>
+    <th style="text-align: center">{{cl2}}</th>
+  </tr>
+  <tr>
+    <th style="text-align: center">{{cl3}}</th>
+    <th style="text-align: center">  </th>
+    <th style="text-align: center">{{cl4}}</th>
+  </tr>
+  <tr>
+    <th style="text-align: center">{{wt1}}</th>
+    <th style="text-align: center">{{wt2}}</th>
+    <th style="text-align: center">{{wt3}}</th>
+  </tr>
+  <tr>
+    <th style="text-align: center">{{wt4}}</th>
+    <th style="text-align: center">{{wt5}}</th>
+    <th style="text-align: center">{{wt6}}</th>
+  </tr>
+</table>
+{% endblock %}
