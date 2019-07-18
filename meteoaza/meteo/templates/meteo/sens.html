@@ -1,0 +1,45 @@
+{%extends "meteo/base.html"%}
+
+{% block content %}
+<style>
+  table, tr, th {
+    height:100px;
+    text-align: center;
+    vertical-align: middle !important;
+    font-size: 25px;
+    color: cyan;
+  }
+</style>
+<div class="container-fluid" style="opacity: 0.8; margin-top: 8rem " >
+  <div class="row">
+    <div class="col">
+      <table class="table table-dark table-bordered">
+        <tr>
+          <th>Рабочий курс{{md1}}</th>
+          <th>{{md2}}</th>
+          <th>{{md3}}</th>
+          <th>{{md4}}</th>
+        </tr>
+        <tr>
+          <th>{{md5}}</th>
+          <th>{{md6}}</th>
+          <th>{{md7}}</th>
+          <th>{{md8}}</th>
+        </tr>
+        <tr>
+          <th>{{md9}}</th>
+          <th>{{md10}}</th>
+          <th>{{md11}}</th>
+          <th>{{md12}}</th>
+        </tr>
+        <tr>
+          <th>{{md13}}</th>
+          <th>{{md14}}</th>
+          <th>{{md15}}</th>
+          <th>{{md16}}</th>
+        </tr>
+        </table>
+      </div>
+    </div>
+</div>
+{% endblock %}
