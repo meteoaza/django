@@ -25,7 +25,7 @@ SECRET_KEY = 'ovye(iw2^*_f25u*fbzdtd!*%jsm!v0cg-(y4+#95d(web!caz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.99', '127.0.0.1', '192.168.1.117']
+ALLOWED_HOSTS = ['192.168.1.99', '127.0.0.1', '192.168.1.117', '192.168.0.225']
 
 
 # Application definition

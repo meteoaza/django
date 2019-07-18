@@ -1,6 +1,10 @@
 {%extends "meteo/base.html"%}
-
+{% load static %}
 {% block content %}
-
-
-{% endblock %}
+<div class="media" style="padding: 70px;">
+  <img src="{% static 'img/temp_small.jpg' %}" class="mr-3" alt="temp">
+  <div class="media-body">
+    <h5 class="mb-0">Температура</br>воздуха</h5>
+    <h3>{{temp}}</h3>
+  </div>
+</div>{% endblock %}
