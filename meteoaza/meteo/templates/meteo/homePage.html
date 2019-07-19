@@ -1,10 +1,23 @@
 {%extends "meteo/base.html"%}
 {% load static %}
 {% block content %}
-<div class="media" style="padding: 70px;">
-  <img src="{% static 'img/temp_small.jpg' %}" class="mr-3" alt="temp">
-  <div class="media-body">
-    <h5 class="mb-0">Температура</br>воздуха</h5>
-    <h3>{{temp}}</h3>
-  </div>
-</div>{% endblock %}
+<div class="topnav">
+  <a class="active" href="/">Главная</a>
+  <a href="/sens">Статистика</a>
+  <a href="/news">Новости</a>
+  <a href="/docs">Документы</a>
+  <a href="/sin">Синоптик</a>
+  <a href="/about">О нас</a>
+  <h3 class="topnav-right">
+    {{time_now | date:' H:m d-m-Y'}}
+  </h3>
+</div>
+<div class="temp-container temp-image">
+  <h5>Температура</br>воздуха,°С</h5>
+  <h2>{{temp}}</h2>
+</div>
+<div class="press-container press-image">
+  <h5>Атмосферное</br>давление, гПа</h5>
+  <h2>{{pres}}</h2>
+</div>
+  {% endblock %}

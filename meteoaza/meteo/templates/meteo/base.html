@@ -7,22 +7,7 @@
     <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
   </head>
 <body>
-  <div class="navbar fixed-top bg-dark" style="opacity: 0.8; font-weight: 800; font-size: 20px">
-    <a href="/">Главная</a>
-    <a href="/sens">Погода на ВПП</a>
-    <a href="/news">Новости</a>
-    <a href="/docs">Документы</a>
-    <a href="/sin">Синоптик</a>
-    <a href="/about">О нас</a>
-    <h3 style="color: lightgreen">
-      {{time_now | date:' H:m d-m-Y'}}
-    </h3>
-    </div>
-  </div>
-  <div class="box">
-    {% block content %}
-    {% endblock %}
-  </div>
-  <div class="row" ></div>
+{% block content %}
+{% endblock %}
 </body>
 </html>

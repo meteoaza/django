@@ -1,5 +1,15 @@
 {%extends "meteo/base.html"%}
 
 {% block content %}
-
+<div class="topnav">
+  <a href="/">Главная</a>
+  <a href="/sens">Статистика</a>
+  <a class="active" href="/news">Новости</a>
+  <a href="/docs">Документы</a>
+  <a href="/sin">Синоптик</a>
+  <a href="/about">О нас</a>
+  <h3 class="topnav-right">
+    {{time_now | date:' H:m d-m-Y'}}
+  </h3>
+</div>
 {% endblock %}
