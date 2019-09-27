@@ -3,11 +3,20 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Meteo{% endblock %}</title>
+    <title>{% block title %}{{title}}{% endblock %}</title>
     <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
   </head>
 <body>
-{% block content %}
-{% endblock %}
+  <div class="topnav">
+    <a href="/">Манас</a>
+    <a href="/docs">Документы</a>
+    <a href="/sin">Синоптик</a>
+    <a href="/about">О нас</a>
+    <h4 class="topnav-right">
+      {{time_now}}
+    </h4>
+  </div>
+  {% block content %}
+  {% endblock %}
 </body>
 </html>

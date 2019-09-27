@@ -1,16 +1,18 @@
 {%extends "meteo/base.html"%}
 
 {% block content %}
-<div>
+<div class='index'>
   <div class='sens-grid'>
     <div class="temp">
-      <h2>{{temp}}</br>°С</h2>
+      <div class='temp-l'>
+        <h2>{{temp}}</br>°С</h2>
+      </div>
     </div>
     <div class='pres'>
       <h2>{{pres}}</br>гПа</h2>
     </div>
     <div class='hum'>
-      <h2>{{hum}}</br>%</h2>
+     <h2>{{hum}}</br>%</h2>
     </div>
     <div class='wind1'>
       <h2>{{wind1}}°</h2>
@@ -20,4 +22,4 @@
     </div>
   </div>
 </div>
-{% endblock %}
+  {% endblock %}
